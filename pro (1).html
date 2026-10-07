@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Racha Pavani | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1e40af;
+    --secondary:#0f172a;
+    --accent:#38bdf8;
+    --bg:#f1f5f9;
+    --card:#ffffff;
+    --text:#1e293b;
+    --text-light:#64748b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:var(--secondary);
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:#cbd5e1;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:70px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:280px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero-text h3{
+    font-weight:400;
+    color:#cbd5e1;
+}
+
+.hero-text p{
+    margin-top:15px;
+    max-width:500px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:20px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    padding:10px 22px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:var(--primary-dark);
+}
+
+/* SECTIONS */
+section{
+    padding:60px 8%;
+}
+
+h2{
+    margin-bottom:25px;
+    border-bottom:3px solid var(--primary);
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border:1px solid var(--primary);
+}
+
+/* CONTACT */
+.contact a{
+    display:inline-block;
+    margin-right:20px;
+    margin-top:10px;
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+    background:var(--secondary);
+    color:#cbd5e1;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Racha Pavani</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Computer Science Student</h1>
+        <h3>Aspiring Software Engineer</h3>
+        <p>
+            Passionate about Artificial Intelligence, Data Structures, and developing scalable
+            software solutions to solve real-world problems.
+        </p>
+        <a href="#" class="btn">Download Resume</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <img src="WhatsApp Image 2026-02-11 at 10.05.39 PM.jpeg" alt="Profile Photo">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am pursuing B.Tech in Computer Science at SR University (2024–2028).
+        My interests include Machine Learning, Data Structures, and system design.
+        I aim to build secure, scalable, and efficient software applications.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="container">
+        <div class="card">Programming: Python, C, Java</div>
+        <div class="card">Web: HTML, CSS, JavaScript</div>
+        <div class="card">Database: MySQL, MongoDB</div>
+        <div class="card">Core Concepts: DSA, OOP, DBMS, OS</div>
+        <div class="card">Tools: Git, GitHub, VS Code</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Nabha portal</h3>
+            <p>Developed a web-based NABHA Portal to manage hospital accreditation processes, compliance tracking, and organized documentation efficiently</p>
+        </div>
+        <div class="card">
+            <h3>Medicine Remainder</h3>
+            <p>Created a medicine reminder app to help users manage their medication schedules.</p>
+        </div>
+        <div class="card">
+            <h3>Creative Prototyping</h3>
+            <p>Designed modern web UI wireframes with minimalistic design principles.</p>
+        </div>
+        <div class="card">
+            <h3>Event Management System</h3>
+            <p>
+                Developed a structured platform to manage event planning, registrations,
+                scheduling, and coordination efficiently.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Simple Priority Queue</h3>
+            <p>
+                Implemented a priority-based queue to efficiently manage and process elements
+                using optimized data structures.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <strong>B.Tech in Computer Science</strong><br>
+        SR University<br>
+        2024 – 2028
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        <p>📞 7989483090</p>
+        <p>📧 pavaniracha2006@gmail.com</p>
+
+        <a href="https://in.linkedin.com/in/pavaniracha" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Racha Pavani | All Rights Reserved
+</footer>
+
+</body>
+</html>
